@@ -28,8 +28,6 @@ class CalendarsController < ApplicationController
 
     @week_days = []
 
-    wdays = ['(日)','(月)','(火)','(水)','(木)','(金)','(土)']
-
     plans = Plan.where(date: @todays_date..@todays_date + 6)
 
     7.times do |x|
